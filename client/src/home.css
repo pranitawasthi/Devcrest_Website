@@ -1,5 +1,99 @@
-@media (max-width:480px) and (min-width:419px) {
-    .coll{
-        display: block;
+/* General Styles */
+.hometext-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+  
+  .sub-heading {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin: 20px 0;
+  }
+  
+  .buts {
+    display: flex;
+    /* background-color: aqua; */
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .btn, .btn2 {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .btn {
+    background-color: #007BFF;
+    color: white;
+  }
+  
+  .btn2 {
+    /* background-color: transparent; */
+    /* border: 2px solid #007BFF; */
+    /* color: #007BFF; */
+
+    width: 10vw;
+  height: 7vh;
+  border-radius: 10px;
+  border-radius: 10px;
+  background: #282828;
+  border: solid 2px;
+  border-color: #6c3dd1;
+  position: relative;
+  color: white;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 2rem;
     }
-}
+  
+    .sub-heading {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 1rem;
+      padding: 0 10px;
+    }
+  
+    .buts {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .btn, .btn2 {
+      width: 100%;
+      font-size: 0.9rem;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+    .main-heading {
+      font-size: 1.5rem;
+    }
+  
+    .sub-heading {
+      font-size: 1.2rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  }
+  
