@@ -1,4 +1,5 @@
 import React from 'react'
+import '../home.css'
 
 export const Hometext = () => {
   return (
@@ -11,7 +12,7 @@ export const Hometext = () => {
     <br />
   <br />
   <h1>
-    <span>Collaborative, </span>
+    <span className='coll'>Collaborative, </span>
     
     <span className="txtgr">Learning-based</span>
   </h1>
