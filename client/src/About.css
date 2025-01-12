@@ -1,0 +1,13 @@
+.plate2{
+    background:inherit;
+        backdrop-filter: blur(10px);
+        height: 80vh;
+        width: 80vw;
+        border-radius: 15px;
+        border: 1px solid rgba(43, 43, 43, 0.568);
+        margin-top: 5vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: solid 1px #6c3dd1;
+}

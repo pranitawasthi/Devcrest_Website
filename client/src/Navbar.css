@@ -1,0 +1,119 @@
+.nav {
+    width: 90vw;
+    border: 0.5px solid #9f9fa0;
+    height: 10vh;
+    border-radius: 20px;
+    margin-top: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    font-family: sans-serif;
+    /* background: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    /* background-color: cadetblue; */
+  }
+  
+  .logo {
+    height: 70%;
+    /* margin-right: 10px; */
+
+  }
+  
+  .logo-text {
+    font-size: large;
+    color: #ffffff;
+  }
+  
+  .tabs {
+    display: flex;
+    align-items: center;
+    /* gap: 15px; */
+    /* background-color: aqua; */
+    
+  }
+  
+  .tab {
+    color: #c76f6f;
+    text-decoration: none;
+    /* font-size: 16px; */
+    transition: color 0.3s;
+    margin-left: 8px;
+  }
+  
+  .tab:hover {
+    color: #555;
+  }
+  
+  .hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 25px;
+    cursor: pointer;
+    background-color:cornsilk;
+  }
+  
+  .hamburger-menu span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 768px) {
+    .tabs {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 10vh;
+      right: 0;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      gap: 10px;
+      width: 50%;
+      z-index: 10;
+    }
+  
+    .tabs.show {
+      display: flex;
+      height: 40vh;
+      background-color:blueviolet;
+      border: #6c3dd1 ;
+    }
+  
+    .hamburger-menu {
+      display: flex;
+      /* background-color: #c76f6f; */
+      /* border: solid black 3px; */
+      background: transparent;
+    }
+  }
+  
+
+  @media(max-width:480px){
+    
+
+       .nav{
+        /* justify-content: flex-start; */
+        /* background-color: #c76f6f; */
+        /* height: 40vh; */
+        /* display: flex;
+        flex-direction: column; */
+        /* display: flex; */
+        display: flex;
+        flex-direction: row;
+       }
+
+      
+      
+
+  } 

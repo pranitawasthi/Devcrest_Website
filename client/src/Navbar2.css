@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}   
+.nav {
+    width: 90vw;
+    /* background-color: aqua; */
+    height: 10vh;
+    margin: auto;
+    margin-top: 4vh;
+    border-radius: 20px;
+    display: flex;
+    border: black solid 2px;
+    /* padding: 0.5em 1em; */
+    padding: 0 2%;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav .logocon {
+    font-size: 1.5rem;
+}
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+.nav ul li {
+    margin: 0 1em;
+}
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.navcard{
+  display: none;
+}
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+    .nav ul {
+        display: none;
+        flex-direction: column;
+    }
+    .nav ul.active {
+        display: flex;
+    }
+    .nav ul li {
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #444;
+    }
+    .nav ul li:last-child {
+        border-bottom: none;
+    }
+
+    .navcard {
+        height: 50vh;
+        width: 30vw;
+        background-color: chocolate;
+        position: absolute;
+        right: 10vw;
+        display: none;
+        padding: 1em;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+    .navcard button {
+        display: block;
+        margin: 0 auto;
+        padding: 0.5em 1em;
+        background-color: #fff;
+        border: 1px solid #444;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .navcard button:hover {
+        background-color: #ddd;
+    }
+}
