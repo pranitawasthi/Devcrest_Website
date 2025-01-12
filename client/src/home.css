@@ -1,6 +1,5 @@
-@media (max-width: 654px) and (min-width: 524px){
+@media (max-width:480px) and (min-width:419px) {
     .coll{
         display: block;
     }
 }
-
